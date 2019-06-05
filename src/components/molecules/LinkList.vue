@@ -2,7 +2,7 @@
   <div>
     <ul class="list-wrapper">
       <li v-for="link in links" :key="link.label" class="list">
-         <AppLink
+        <AppLink
           :label="link.label"
           :path="link.path"
         />
