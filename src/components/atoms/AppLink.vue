@@ -21,6 +21,12 @@ export default {
 .link-text {
     color: #d3d3d3;
     text-decoration: none;
+    padding: 20px;
+}
+
+.link-text:hover {
+  background-color: #C4FFE7;
+  color: #fff;
 }
 </style>
 
