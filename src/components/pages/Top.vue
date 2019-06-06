@@ -17,7 +17,6 @@ export default {
 <style>
 .top {
   text-align: center;
-  padding-top: 15%;
 }
 </style>
 

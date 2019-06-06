@@ -1,6 +1,6 @@
 <template>
     <a
-      class="link-text"
+      :class="decorate"
       :href="path"
     >
       {{ label }}
@@ -12,21 +12,29 @@ export default {
   name: 'AppLink',
   props: {
     label: String,
-    path: String
+    path: String,
+    decorate: {
+      type: String,
+      default: 'none'
+    }
   }
 }
 </script>
 
-<style>
-.link-text {
+<style scoped>
+.under {
     color: #d3d3d3;
     text-decoration: none;
     padding: 20px;
 }
 
-.link-text:hover {
+.under:hover {
   background-color: #C4FFE7;
   color: #fff;
+}
+
+.none {
+
 }
 </style>
 

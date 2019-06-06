@@ -1,10 +1,11 @@
 <template>
   <div>
-    <ul class="list-wrapper">
-      <li v-for="link in links" :key="link.label" class="list">
+    <ul :class="{'horizon-wrapper': (list === 'horizon')}">
+      <li v-for="link in links" :key="link.label" :class="list">
         <AppLink
           :label="link.label"
           :path="link.path"
+          :decorate='decorate'
         />
       </li>
     </ul>
@@ -20,20 +21,22 @@ export default {
         AppLink
     },
     props: {
-        links: Array
+        links: Array,
+        decorate: String,
+        list: String
     }
 }
 </script>
 
-<style>
-.list-wrapper {
+<style scoped>
+.horizon-wrapper {
     display: flex;
     justify-content: space-evenly;
     width: 70%;
     margin: auto;
-    margin-top: 4%;
+    margin-top: 2%;
 }
-.list {
+.horizon {
   list-style: none;
   display: inline;
   border-bottom: 3px solid #C4FFE7;

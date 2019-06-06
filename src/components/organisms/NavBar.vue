@@ -1,8 +1,10 @@
 <template>
-  <div>
+  <div class="nav-bar">
     <Title title="yutaro-ohno.me" />
     <LinkList
-    :links="links"
+      :links="links"
+      :decorate="decorate"
+      :list="list"
     />
   </div>
 </template>
@@ -31,7 +33,9 @@ export default {
           path: '/contact',
           label: 'CONTACT'
         }
-      ]
+      ],
+      list: 'horizon',
+      decorate: 'under'
     }
   },
   components: {
@@ -40,3 +44,10 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.nav-bar{
+  text-align: center
+}
+</style>
+
