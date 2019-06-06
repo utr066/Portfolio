@@ -1,6 +1,5 @@
 <template>
     <div>
-        <h2>お問い合わせ</h2>
         <AppInput placeholder="お名前" type="inquiry"/>
         <AppInput placeholder="メールアドレス" type="inquiry" />
         <AppTextArea placeholder="お問い合わせ内容" type="inquiry" />

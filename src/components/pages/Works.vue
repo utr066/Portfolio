@@ -1,18 +1,16 @@
 <template>
-    <div class="works">
-        <NavBar />
-        <WorkList />
+    <div id="works" class="works">
+        <h2 class="works_title">WORKS</h2>
+        <WorkList class="work-list"/>
     </div>
 </template>
 
 <script>
-import NavBar from '../organisms/NavBar'
 import WorkList from '../organisms/WorkList'
 
 export default {
   name: 'profile',
   components: {
-    NavBar,
     WorkList
   }
 }
@@ -20,7 +18,17 @@ export default {
 
 <style>
 .works {
-  text-align: center;
+    text-align: center;
+    margin: auto;
+    background-color: #FAFAFA;
+}
+
+.work-list{
+    width: 73%;
+}
+
+.works_title {
+    font-weight: normal;
 }
 </style>
 

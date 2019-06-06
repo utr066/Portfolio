@@ -1,24 +1,23 @@
 <template>
-    <div class="skill">
-        <NavBar />
-        <!-- header -->
-        <p>skill</p>
+    <div id="skill" class="skill">
+        <h2 class="skill_title">SKILL</h2>
     </div>
 </template>
 
 <script>
-import NavBar from '../organisms/NavBar'
 export default {
   name: 'skill',
-  components: {
-    NavBar
-  }
 }
 </script>
 
 <style>
 .skill {
-  text-align: center;
+    text-align: center;
+    /* background-color: #FAFAFA; */
+}
+
+.skill_title {
+    font-weight: normal;
 }
 </style>
 

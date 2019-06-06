@@ -1,6 +1,5 @@
 <template>
   <div class="nav-bar">
-    <Title title="yutaro-ohno.me" />
     <LinkList
       :links="links"
       :decorate="decorate"
@@ -11,7 +10,6 @@
 
 <script>
 import LinkList from '../molecules/LinkList'
-import Title from '../atoms/AppTitle'
 export default {
   name: 'NavBar',
   data () {
@@ -39,8 +37,7 @@ export default {
     }
   },
   components: {
-    LinkList,
-    Title
+    LinkList
   }
 }
 </script>

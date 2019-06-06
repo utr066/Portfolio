@@ -1,18 +1,16 @@
 <template>
-    <div class="contact">
-        <NavBar />
+    <div id="contact" class="contact">
+        <h2 class="contact_title">Contact</h2>
         <ContactForm />
     </div>
 </template>
 
 <script>
-import NavBar from '../organisms/NavBar'
 import ContactForm from '../organisms/ContactForm'
 
 export default {
   name: 'contact',
   components: {
-    NavBar,
     ContactForm
   }
 }
@@ -21,6 +19,11 @@ export default {
 <style>
 .contact {
   text-align: center;
+  /* background-color: #FAFAFA; */
+}
+
+.contact_title {
+    font-weight: normal;
 }
 </style>
 

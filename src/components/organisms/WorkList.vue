@@ -1,10 +1,11 @@
 <template>
-    <div>
+    <div class="grid">
         <div v-for="work in works" :key="work.title">
             <WorkCard
                 :title="work.title"
                 :sub_title="work.sub_title"
                 :description="work.description"
+                class="work"
             />
         </div>
     </div>
@@ -51,3 +52,12 @@ export default {
     }
 }
 </script>
+
+<style>
+.grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  margin: auto;
+}
+</style>

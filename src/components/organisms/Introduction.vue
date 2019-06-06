@@ -26,7 +26,7 @@ export default {
   },
   data() {
     return {
-      text: 'introdaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa',
+      text: "2015年12月~ プログラミング学習を始める\n2017年4月~ 大学卒業、Webエンジニアへ\n2018年4月~ フリーランス",
       position: 'right',
       src: require('../../assets/images/cat.jpg'),
       links: [
