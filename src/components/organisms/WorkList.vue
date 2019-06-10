@@ -13,6 +13,7 @@
 
 <script>
 import WorkCard from '../molecules/WorkCard'
+import axios from 'axios';
 
 export default {
     name: 'WorkList',
@@ -23,32 +24,49 @@ export default {
         return {
             works: [
                 {
+                    id: 1,
+                    user_id: 1,
                     title: 'hoge',
                     sub_title: 'hogeのサイト',
                     description: 'hogehoge'
                 },
                 {
+                    id: 1,
+                    user_id: 1,
                     title: 'fuga',
                     sub_title: 'fugaのサイト',
                     description: 'hogehoge'
                 },
                 {
+                    id: 1,
+                    user_id: 1,
                     title: 'hogefuga',
                     sub_title: 'hogefugaのサイト',
                     description: 'hogehoge'
                 },
                 {
+                    id: 1,
+                    user_id: 1,
                     title: 'fugahoge',
                     sub_title: 'fugahogeのサイト',
                     description: 'hogehoge'
                 },
                 {
+                    id: 1,
+                    user_id: 1,
                     title: 'hogehogefuga',
                     sub_title: 'hogehogefugaのサイト',
                     description: 'hogehoge'
                 },
             ]
         }
+    },
+    mounted () {
+    axios
+        .get('http://localhost:9800/users/1/works')
+        .then(response => {
+            this.works = response.data.works
+        })
     }
 }
 </script>
@@ -56,7 +74,7 @@ export default {
 <style>
 .grid{
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 10px;
   margin: auto;
 }

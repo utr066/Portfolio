@@ -16,6 +16,7 @@
 import AppPicture from '../atoms/AppPicture'
 import AppText from '../atoms/AppText'
 import LinkList from '../molecules/LinkList'
+import axios from 'axios';
 
 export default {
   name: 'Introduction',
@@ -44,6 +45,13 @@ export default {
         }
       ]
     }
+  },
+  mounted () {
+    axios
+      .get('http://localhost:9800/users/1/profile')
+      .then(response => {
+        this.text = response.data.profile.introduction
+      })
   }
 }
 </script>

@@ -3,6 +3,7 @@
     <AppCard
       :title="title"
       :sub_title="sub_title"  
+      type="work"
     />
     <AppText :text="description"/>
   </div>

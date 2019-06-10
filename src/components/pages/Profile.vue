@@ -9,6 +9,7 @@
 
 <script>
 import Introduction from '../organisms/Introduction'
+
 export default {
   name: 'profile',
   components: {
@@ -24,6 +25,7 @@ export default {
     margin-top: 5%;
     padding-top: 3%;
     font-weight: normal;
+    font-family: Lato;
 }
 
 .bg-gray {

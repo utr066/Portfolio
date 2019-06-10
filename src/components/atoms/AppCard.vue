@@ -1,5 +1,5 @@
 <template>
-  <div class="card">
+  <div :class="type">
     <img class="card-img" src="" alt="">
     <div class="card-content">
         <h1 class="card-title">{{ title }}</h1>
@@ -13,7 +13,8 @@ export default {
   name: 'AppCard',
   props: {
       title: String,
-      sub_title: String
+      sub_title: String,
+      type: String
   }
 }
 </script>
@@ -21,11 +22,24 @@ export default {
 <style scoped>
 .card {
   margin: 30px auto;
-  width: 300px;
+  /* width: 300px; */
   height: 300px;
   background: #fff;
   border-radius: 5px;
   /* box-shadow: 0 1px 2px #ccc; */
+}
+
+.work {
+  margin: 30px auto;
+  height: 300px;
+  background: #fff;
+  border-radius: 5px;
+}
+
+.skill {
+  margin: 30px auto;
+  background: #fff;
+  border-radius: 5px;
 }
 
 .card:hover {
