@@ -7,7 +7,7 @@
         :placeholder="placeholder"
         :class="type"
     >
-    </textareaname="">    
+    </textareaname>    
 </template>
 
 <script>

@@ -1,9 +1,7 @@
 <template>
-    <div class="bg-gray">
-        <div id="profile" class="profile">
-            <h2 class="profile">PROFILE</h2>
-            <Introduction />
-        </div>
+    <div id="profile" class="bg-gray">
+        <h2 class="profile_title">PROFILE</h2>
+        <Introduction />
     </div>
 </template>
 
@@ -19,17 +17,20 @@ export default {
 </script>
 
 <style>
-.profile {
-    width: 70%;
+#profile {
+    padding-bottom: 30px;
+    text-align: center;
     margin: auto;
-    margin-top: 5%;
-    padding-top: 3%;
+}
+
+.profile_title {
     font-weight: normal;
-    font-family: Lato;
+    padding-top: 2%;
 }
 
 .bg-gray {
     background-color: #FAFAFA;
 }
+
 </style>
 

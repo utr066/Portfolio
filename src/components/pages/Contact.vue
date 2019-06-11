@@ -19,7 +19,6 @@ export default {
 <style>
 .contact {
   text-align: center;
-  /* background-color: #FAFAFA; */
 }
 
 .contact_title {

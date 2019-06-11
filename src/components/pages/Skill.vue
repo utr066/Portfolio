@@ -1,5 +1,5 @@
 <template>
-    <div id="skill" class="skill">
+    <div id="skill">
         <h2 class="skill_title">SKILL</h2>
         <SkillList class="skill-list"/>
     </div>
@@ -17,7 +17,8 @@ export default {
 </script>
 
 <style>
-.skill {
+#skill {
+    padding-bottom: 30px;
     text-align: center;
     margin: auto;
 }

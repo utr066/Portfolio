@@ -1,8 +1,5 @@
 <template>
-    <div class="top">
-        <h1 class="title">{{ title }}</h1>
-        <p class="sub_title">{{ sub_title }}</p>
-    </div>
+    <h1 class="title" :class="type">{{ title }}</h1>
 </template>
 
 <script>
@@ -10,7 +7,7 @@ export default {
   name: 'Title',
   props: {
     title: String,
-    sub_title: String
+    type: String 
   }
 }
 </script>
@@ -22,14 +19,15 @@ export default {
     font-size: 30px;
 }
 
-.sub_title {
-    font-size: 13px;
-    color: #aaaaaa;
-    margin-top: -1%;
-    letter-spacing: 1px;
+.card {
+  font-size: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
 }
-
-.top {
-    padding: 15% 0;
-}
+/* .card-text {
+  color: #777;
+  font-size: 14px;
+  line-height: 1.5;
+} */
 </style>

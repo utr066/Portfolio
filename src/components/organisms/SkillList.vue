@@ -1,46 +1,77 @@
 <template>
     <div class="grid">
         <div v-for="skill in skills" :key="skill.title">
-            <SkillCard
+            <Card
                 :title="skill.name"
-                :level="skill.levels"
-                class="skill"
+                :level="skill.level"
+                type="skill"
             />
+            <Rate :level="skill.level" />
         </div>
     </div>
 </template>
 
 <script>
-import SkillCard from '../molecules/SkillCard'
-import axios from 'axios';
+import Card from '../organisms/Card'
+import axios from 'axios'
+import Rate from '../atoms/Rate'
 
 export default {
     name: 'SkillList',
     components: {
-        SkillCard
+        Card,
+        Rate
     },
     data() {
         return {
             skills: [
                 {
-                    name: 'hoge',
-                    levels: 1
+                    name: 'HTML',
+                    level: 1
                 },
                 {
-                    name: 'fuga',
-                    levels: 1
+                    name: 'CSS',
+                    level: 1
                 },
                 {
-                    name: 'hogefuga',
-                    levels: 1
+                    name: 'jQuery',
+                    level: 1
                 },
                 {
-                    name: 'fugahoge',
-                    levels: 1
+                    name: 'Vue',
+                    level: 1
                 },
                 {
-                    name: 'hogehogefuga',
-                    levels: 1
+                    name: 'React',
+                    level: 1
+                },
+                {
+                    name: 'Ruby',
+                    level: 1
+                },
+                {
+                    name: 'Rails',
+                    level: 1
+                },
+                {
+                    name: 'PHP',
+                    level: 1
+                },
+                {
+                    name: 'Laravel',
+                    level: 1
+                },
+               {
+                    name: 'Go',
+                    level: 1
+                },
+               {
+                    name: 'Docker',
+                    level: 1
+                },
+                {
+                    name: 'Mysql',
+                    level: 1
                 },
             ]
         }

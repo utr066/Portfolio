@@ -1,5 +1,5 @@
 <template>
-    <div id="works" class="works">
+    <div id="works">
         <h2 class="works_title">WORKS</h2>
         <WorkList class="work-list"/>
     </div>
@@ -17,7 +17,8 @@ export default {
 </script>
 
 <style scoped>
-.works {
+#works {
+    padding-bottom: 30px;
     text-align: center;
     margin: auto;
     background-color: #FAFAFA;
@@ -29,6 +30,7 @@ export default {
 
 .works_title {
     font-weight: normal;
+    padding-top: 2%;
 }
 </style>
 

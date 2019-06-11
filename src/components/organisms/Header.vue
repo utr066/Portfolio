@@ -1,7 +1,8 @@
 <template>
     <LinkList
       :links="links"
-      :list_style="list_style"
+      :ul_style="ul_style"
+      :li_style="li_style"
     />
 </template>
 
@@ -12,7 +13,8 @@ export default {
     name: 'Header',
     data() {
         return {
-            list_style: 'horizon',
+            ul_style: 'nav',
+            li_style: 'horizon',
             links: [
                 {
                 path: '#profile',

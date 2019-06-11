@@ -1,7 +1,7 @@
 <template>
   <div>
-    <ul class="nav">
-      <li v-for="link in links" :key="link.label" :class="list_style">
+    <ul :class="ul_style">
+      <li v-for="link in links" :key="link.label" :class="li_style">
         <AppLink
           :label="link.label"
           :path="link.path"
@@ -23,7 +23,8 @@ export default {
     props: {
         links: Array,
         decorate: String,
-        list_style: String
+        ul_style: String,
+        li_style: String
     }
 }
 </script>
@@ -38,5 +39,10 @@ export default {
   list-style: none;
   display: inline;
   margin: 10px;
+}
+
+.vertical {
+  text-align: left;
+  margin-left: -20px;
 }
 </style>

@@ -1,10 +1,7 @@
 <template>
   <div class="wrapper">
     <Header />
-    <AppTitle 
-      title="YUTARO OHNO"
-      sub_title="CREATOR"
-    />
+    <Cover />
     <Profile />
     <Skill />
     <Works />
@@ -13,8 +10,8 @@
 </template>
 
 <script>
+import Cover from './Cover'
 import Header from '../organisms/Header'
-import AppTitle from '../atoms/AppTitle'
 import Profile from './Profile'
 import Works from './Works'
 import Skill from './Skill'
@@ -24,7 +21,7 @@ export default {
   name: 'top',
   components: {
     Header,
-    AppTitle,
+    Cover,
     Profile,
     Works,
     Skill,
@@ -37,5 +34,6 @@ export default {
 .wrapper {
   text-align: center;
 }
+
 </style>
 

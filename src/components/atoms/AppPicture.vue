@@ -15,9 +15,6 @@ export default {
 
 <style scoped>
 .avatar {
-    width: 20%;
-    height: 20%;
-    border-radius: 50%;
 }
 </style>
 

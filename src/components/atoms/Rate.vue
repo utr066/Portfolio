@@ -1,27 +1,15 @@
 <template>
-  <div>
-    <AppCard
-      :title="title"
-      type="skill"
-    />
-    <span class="rate" :class="classObject"></span>
-  </div>
+    <span class="rate" :class="rateObject"></span>    
 </template>
 
 <script>
-import AppCard from '../atoms/AppCard'
-
 export default {
-    name: 'SkillCard',
-    components: {
-      AppCard,
-    },
+    name: 'Rate',
     props: {
-      title: String,
-      level: Number,
+        level: Number
     },
     computed: {
-        classObject: function () {
+        rateObject: function () {
             return 'rate' + this.level
         }
     }

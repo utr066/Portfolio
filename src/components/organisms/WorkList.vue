@@ -1,24 +1,25 @@
 <template>
     <div class="grid">
         <div v-for="work in works" :key="work.title">
-            <WorkCard
+            <Card
                 :title="work.title"
                 :sub_title="work.sub_title"
                 :description="work.description"
-                class="work"
+                type="work"
             />
         </div>
     </div>
 </template>
 
 <script>
-import WorkCard from '../molecules/WorkCard'
+// import WorkCard from '../molecules/WorkCard'
+import Card from '../organisms/Card'
 import axios from 'axios';
 
 export default {
     name: 'WorkList',
     components: {
-        WorkCard
+        Card
     },
     data() {
         return {
@@ -28,7 +29,7 @@ export default {
                     user_id: 1,
                     title: 'hoge',
                     sub_title: 'hogeのサイト',
-                    description: 'hogehoge'
+                    description: 'reactで作ったhogeのサイトです。Reduxは使用せず、Reactのみです。'
                 },
                 {
                     id: 1,
