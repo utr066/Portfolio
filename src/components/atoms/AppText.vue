@@ -16,14 +16,12 @@ export default {
 .sub_title {
     font-size: 13px;
     color: #aaaaaa;
-    /* margin-top: -1%; */
     letter-spacing: 1px;
 }
 
 .description {
     font-size: 14px;
     color: #aaaaaa;
-    /* margin-top: -1%; */
     letter-spacing: 1px;
 }
 

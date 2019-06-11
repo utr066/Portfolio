@@ -21,10 +21,6 @@ export default {
 <style>
 .cover {
   height: 90vh;;
-  /* border: 2px solid #1b0303; */
-  /* box-sizing: border-box; */
-  /* width: 100%; */
-  /* height: 300px; */
   display: flex;
   justify-content: center;
   align-items: center;

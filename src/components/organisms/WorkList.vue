@@ -12,7 +12,6 @@
 </template>
 
 <script>
-// import WorkCard from '../molecules/WorkCard'
 import Card from '../organisms/Card'
 import axios from 'axios';
 
@@ -72,7 +71,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .grid{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));

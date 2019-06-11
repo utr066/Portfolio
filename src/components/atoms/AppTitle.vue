@@ -25,9 +25,4 @@ export default {
   text-align: center;
   color: #333;
 }
-/* .card-text {
-  color: #777;
-  font-size: 14px;
-  line-height: 1.5;
-} */
 </style>

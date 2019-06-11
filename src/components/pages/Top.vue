@@ -30,7 +30,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .wrapper {
   text-align: center;
 }

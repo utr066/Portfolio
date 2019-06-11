@@ -16,7 +16,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 #skill {
     padding-bottom: 30px;
     text-align: center;
