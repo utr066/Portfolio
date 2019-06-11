@@ -6,7 +6,7 @@
         type="avatar"
       />
       <div class="right_content">
-        <AppText :text="text" type="intro"/>
+        <AppText :text="introduction" type="intro"/>
         <LinkList :links="links" ul_style="intro" li_style="vertical"/>   
       </div>
   </div>
@@ -16,7 +16,6 @@
 import AppPicture from '../atoms/AppPicture'
 import AppText from '../atoms/AppText'
 import LinkList from '../molecules/LinkList'
-import axios from 'axios';
 
 export default {
   name: 'Introduction',
@@ -27,7 +26,6 @@ export default {
   },
   data() {
     return {
-      text: "2015年12月~ プログラミング学習を始める。IT企業でインターンをし、RailsやJavascriptを学ぶ。\n\n2017年4月~ 大学卒業、Webエンジニアへ。ここではLaravelとGoによる開発を行った。\n\n2018年4月~ フリーランス。直近はLaravelによる開発を行った。",
       position: 'right',
       src: require('../../assets/images/cat.jpg'),
       links: [
@@ -46,12 +44,13 @@ export default {
       ]
     }
   },
-  mounted () {
-    axios
-      .get('http://localhost:9800/users/1/profile')
-      .then(response => {
-        this.text = response.data.profile.introduction
-      })
+  computed: {
+    introduction() {
+      return this.$store.state.introduction
+    }
+  },
+  mounted() {
+      this.$store.dispatch('setIntroduction')
   }
 }
 </script>

@@ -1,28 +1,28 @@
 <template>
-    <p :class="type">{{ text }}</p>
+  <p :class="type">{{ text }}</p>
 </template>
 
 <script>
 export default {
   name: 'AppText',
   props: {
-      text: String,
-      type: String
+    text: String,
+    type: String
   }
 }
 </script>
 
 <style scoped>
 .sub_title {
-    font-size: 13px;
-    color: #aaaaaa;
-    letter-spacing: 1px;
+  font-size: 13px;
+  color: #aaaaaa;
+  letter-spacing: 1px;
 }
 
 .description {
-    font-size: 14px;
-    color: #aaaaaa;
-    letter-spacing: 1px;
+  font-size: 14px;
+  color: #aaaaaa;
+  letter-spacing: 1px;
 }
 
 .intro {

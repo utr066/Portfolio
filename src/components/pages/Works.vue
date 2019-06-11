@@ -1,8 +1,8 @@
 <template>
-    <div id="works">
-        <h2 class="works_title">WORKS</h2>
-        <WorkList class="work-list"/>
-    </div>
+  <div id="works">
+    <h2 class="works_title">WORKS</h2>
+    <WorkList class="work-list"/>
+  </div>
 </template>
 
 <script>
@@ -18,19 +18,19 @@ export default {
 
 <style scoped>
 #works {
-    padding-bottom: 30px;
-    text-align: center;
-    margin: auto;
-    background-color: #FAFAFA;
+  padding-bottom: 30px;
+  text-align: center;
+  margin: auto;
+  background-color: #FAFAFA;
 }
 
 .work-list{
-    width: 73%;
+  width: 73%;
 }
 
 .works_title {
-    font-weight: normal;
-    padding-top: 2%;
+  font-weight: normal;
+  padding-top: 2%;
 }
 </style>
 

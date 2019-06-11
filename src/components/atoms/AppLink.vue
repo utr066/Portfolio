@@ -1,10 +1,10 @@
 <template>
-    <a
-      :class="decorate"
-      :href="path"
-    >
-      {{ label }}
-    </a>
+  <a
+    :class="decorate"
+    :href="path"
+  >
+    {{ label }}
+  </a>
 </template>
 
 <script>
@@ -14,8 +14,7 @@ export default {
     label: String,
     path: String,
     decorate: {
-      type: String,
-      default: 'none'
+      type: String
     }
   }
 }
@@ -23,18 +22,14 @@ export default {
 
 <style scoped>
 .under {
-    color: #d3d3d3;
-    text-decoration: none;
-    padding: 20px;
+  color: #d3d3d3;
+  text-decoration: none;
+  padding: 20px;
 }
 
 .under:hover {
   background-color: #C4FFE7;
   color: #fff;
-}
-
-.none {
-
 }
 </style>
 

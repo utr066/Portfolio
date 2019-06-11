@@ -14,9 +14,9 @@ export default {
 
 <style scoped>
 .title {
-    font-family: 'Al Nile';
-    font-weight: normal;
-    font-size: 30px;
+  font-family: 'Al Nile';
+  font-weight: normal;
+  font-size: 30px;
 }
 
 .card {

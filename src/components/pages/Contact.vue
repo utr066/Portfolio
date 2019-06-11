@@ -1,8 +1,8 @@
 <template>
-    <div id="contact" class="contact">
-        <h2 class="contact_title">Contact</h2>
-        <ContactForm />
-    </div>
+  <div id="contact" class="contact">
+    <h2 class="contact_title">Contact</h2>
+    <ContactForm />
+  </div>
 </template>
 
 <script>
@@ -22,7 +22,7 @@ export default {
 }
 
 .contact_title {
-    font-weight: normal;
+  font-weight: normal;
 }
 </style>
 

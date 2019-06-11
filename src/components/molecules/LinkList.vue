@@ -18,13 +18,13 @@ import AppLink from '../atoms/AppLink'
 export default {
     name: 'LinkList',
     components: {
-        AppLink
+      AppLink
     },
     props: {
-        links: Array,
-        decorate: String,
-        ul_style: String,
-        li_style: String
+      links: Array,
+      decorate: String,
+      ul_style: String,
+      li_style: String
     }
 }
 </script>

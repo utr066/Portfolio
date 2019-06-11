@@ -1,20 +1,20 @@
 <template>
-    <div class="cover">
-        <Title 
-        title="YUTARO OHNO"
-        text="CREATOR"
-        />
-    </div>
+  <div class="cover">
+    <Title 
+    title="YUTARO OHNO"
+    text="CREATOR"
+    />
+  </div>
 </template>
 
 <script>
 import Title from '../molecules/Title'
 
 export default {
-    name: "Cover",
-    components: {
-        Title
-    }
+  name: "Cover",
+  components: {
+    Title
+  }
 }
 </script>
 

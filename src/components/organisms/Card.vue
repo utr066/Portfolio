@@ -2,9 +2,9 @@
   <div class="card" :class="type">
     <img class="card-img" src="" alt="">
     <CardContent
-        :title="title"
-        :sub_title="sub_title"
-        :description="description"
+			:title="title"
+			:sub_title="sub_title"
+			:description="description"
     />
   </div>
 </template>
@@ -13,20 +13,19 @@
 import CardContent from '../molecules/CardContent'
 
 export default {
-    name: 'Card',
-    components: {
-        CardContent
-    },
-    props: {
-        title: String,
-        sub_title: String,
-        description: String,
-        src: String,
-        type: String
-    }
+	name: 'Card',
+	components: {
+		CardContent
+	},
+	props: {
+		title: String,
+		sub_title: String,
+		description: String,
+		src: String,
+		type: String
+	}
 }
 </script>
-
 
 <style scoped>
 .card {

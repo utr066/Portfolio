@@ -1,18 +1,18 @@
 <template>
-    <span class="rate" :class="rateObject"></span>    
+  <span class="rate" :class="rateObject"></span>    
 </template>
 
 <script>
 export default {
-    name: 'Rate',
-    props: {
-        level: Number
-    },
-    computed: {
-        rateObject: function () {
-            return 'rate' + this.level
-        }
+  name: 'Rate',
+  props: {
+    level: Number
+  },
+  computed: {
+    rateObject: function () {
+      return 'rate' + this.level
     }
+  }
 }
 </script>
 

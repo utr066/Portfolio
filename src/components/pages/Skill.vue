@@ -1,8 +1,8 @@
 <template>
-    <div id="skill">
-        <h2 class="skill_title">SKILL</h2>
-        <SkillList class="skill-list"/>
-    </div>
+  <div id="skill">
+    <h2 class="skill_title">SKILL</h2>
+    <SkillList class="skill-list"/>
+  </div>
 </template>
 
 <script>
@@ -11,24 +11,24 @@ import SkillList from '../organisms/SkillList'
 export default {
   name: 'skill',
   components: {
-      SkillList
+    SkillList
   }
 }
 </script>
 
 <style scoped>
 #skill {
-    padding-bottom: 30px;
-    text-align: center;
-    margin: auto;
+  padding-bottom: 30px;
+  text-align: center;
+  margin: auto;
 }
 
 .skill-list{
-    width: 60%;
+  width: 60%;
 }
 
 .skill_title {
-    font-weight: normal;
+  font-weight: normal;
 }
 </style>
 

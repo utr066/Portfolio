@@ -1,8 +1,8 @@
 <template>
-    <div id="profile" class="bg-gray">
-        <h2 class="profile_title">PROFILE</h2>
-        <Introduction />
-    </div>
+  <div id="profile" class="bg-gray">
+    <h2 class="profile_title">PROFILE</h2>
+    <Introduction />
+  </div>
 </template>
 
 <script>
@@ -18,19 +18,18 @@ export default {
 
 <style scoped>
 #profile {
-    padding-bottom: 30px;
-    text-align: center;
-    margin: auto;
+  padding-bottom: 30px;
+  text-align: center;
+  margin: auto;
 }
 
 .profile_title {
-    font-weight: normal;
-    padding-top: 2%;
+  font-weight: normal;
+  padding-top: 2%;
 }
 
 .bg-gray {
-    background-color: #FAFAFA;
+  background-color: #FAFAFA;
 }
-
 </style>
 
