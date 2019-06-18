@@ -1,9 +1,9 @@
 import api from '../api'
 
 export default {
-  setIntroduction({commit}) {
+  setProfile({commit}) {
     api.fetchProfile().then(response => {
-      commit('setIntroduction', response.data.profile.introduction)
+      commit('setProfile', response.data.profile)
     })
   },
   setWorks({ commit }) {

@@ -6,6 +6,11 @@
         :level="skill.level"
         type="skill"
       />
+      <AppPicture 
+        :src="skill.image_path"
+        :alt="skill.name"
+        type="skill_image"
+      />
       <Rate :level="skill.level" />
     </div>
   </div>
@@ -14,12 +19,14 @@
 <script>
 import Card from '../organisms/Card'
 import Rate from '../atoms/Rate'
+import AppPicture from '../atoms/AppPicture.vue'
 
 export default {
   name: 'SkillList',
   components: {
     Card,
-    Rate
+    Rate,
+    AppPicture
   },
   computed: {
     skills() {

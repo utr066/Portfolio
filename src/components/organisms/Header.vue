@@ -1,9 +1,11 @@
 <template>
-  <LinkList
-    :links="links"
-    :ul_style="ul_style"
-    :li_style="li_style"
-  />
+  <header>
+    <LinkList
+      :links="links"
+      :ul_style="ul_style"
+      :li_style="li_style"
+    />
+  </header>
 </template>
 
 <script>

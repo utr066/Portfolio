@@ -14,7 +14,12 @@ export default {
 </script>
 
 <style scoped>
-/* .avatar {
-} */
+.avatar {
+  width: 300px;
+}
+
+.skill_image {
+  width: 150px;
+}
 </style>
 

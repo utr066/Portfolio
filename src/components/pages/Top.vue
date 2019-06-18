@@ -6,6 +6,7 @@
     <Skill />
     <Works />
     <Contact />
+    <Footer />
   </div>
 </template>
 
@@ -16,6 +17,7 @@ import Profile from './Profile'
 import Works from './Works'
 import Skill from './Skill'
 import Contact from './Contact'
+import Footer from '../organisms/Footer'
 
 export default {
   name: 'top',
@@ -25,15 +27,15 @@ export default {
     Profile,
     Works,
     Skill,
-    Contact
+    Contact,
+    Footer
   }
 }
 </script>
 
 <style scoped>
 .wrapper {
-  text-align: center;
-}
 
+}
 </style>
 

@@ -1,6 +1,6 @@
 export default {
-  setIntroduction(state, introduction) {
-    state.introduction = introduction
+  setProfile(state, profile) {
+    state.profile = profile
   },
   setWorks(state, works) {
     state.works = works

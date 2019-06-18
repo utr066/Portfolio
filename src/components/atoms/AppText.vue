@@ -17,6 +17,7 @@ export default {
   font-size: 13px;
   color: #aaaaaa;
   letter-spacing: 1px;
+  text-align: center;
 }
 
 .description {

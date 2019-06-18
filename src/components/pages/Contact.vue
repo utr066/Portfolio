@@ -1,5 +1,5 @@
 <template>
-  <div id="contact" class="contact">
+  <div id="contact">
     <h2 class="contact_title">Contact</h2>
     <ContactForm />
   </div>
@@ -17,7 +17,7 @@ export default {
 </script>
 
 <style>
-.contact {
+#contact {
   text-align: center;
 }
 

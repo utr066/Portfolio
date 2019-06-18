@@ -1,7 +1,7 @@
 <template>
   <div class="introduction grid">
       <AppPicture
-        :src="src"
+        :src="avatar"
         alt="avatar"
         type="avatar"
       />
@@ -27,7 +27,6 @@ export default {
   data() {
     return {
       position: 'right',
-      src: require('../../assets/images/cat.jpg'),
       links: [
         {
           path: '#',
@@ -46,11 +45,14 @@ export default {
   },
   computed: {
     introduction() {
-      return this.$store.state.introduction
+      return this.$store.state.profile.introduction
+    },
+    avatar() {
+      return this.$store.state.profile.avatar
     }
   },
   mounted() {
-      this.$store.dispatch('setIntroduction')
+      this.$store.dispatch('setProfile')
   }
 }
 </script>
