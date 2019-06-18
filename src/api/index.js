@@ -11,12 +11,12 @@ axios.interceptors.response.use(function (response) {
 
 export default {
   fetchProfile() {
-      return axios.get('http://localhost:9800/users/1/profile')
+      return axios.get(process.env.VUE_APP_API_URL_BASE + 'users/1/profile')
   },
   fetchworks() {
-      return axios.get('http://localhost:9800/users/1/works')
+      return axios.get(process.env.VUE_APP_API_URL_BASE + 'users/1/works')
   },
   fetchSkills() {
-      return axios.get('http://localhost:9800/users/1/skills')
+      return axios.get(process.env.VUE_APP_API_URL_BASE + 'users/1/skills')
   }
 }
