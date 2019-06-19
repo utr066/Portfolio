@@ -1,7 +1,7 @@
 <template>
   <a
     :class="type"
-    :href="path"
+    :href="url"
   >
     {{ label }}
   </a>
@@ -12,7 +12,7 @@ export default {
   name: 'AppLink',
   props: {
     label: String,
-    path: String,
+    url: String,
     type: String
   }
 }

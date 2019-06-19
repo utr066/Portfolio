@@ -6,7 +6,7 @@
 			:description="description"
     />
     <AppPicture :src="src" :type="type" />
-    <AppLink v-if="type === 'work'" :type="type" :label="title" path="#" />
+    <AppLink v-if="type === 'work'" :type="type" :label="title" :url="url" />
   </div>
 </template>
 
@@ -26,7 +26,8 @@ export default {
 		title: String,
 		sub_title: String,
 		description: String,
-		src: String,
+    src: String,
+    url: String,
 		type: String
 	}
 }

@@ -6,6 +6,7 @@
         :sub_title="work.sub_title"
         :description="work.description"
         :src="work.image_path"
+        :url="work.url"
         type="work"
       />
     </div>
