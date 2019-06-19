@@ -20,8 +20,8 @@ export default {
 }
 
 .card {
+  padding-top: 30px;
   font-size: 20px;
-  margin-bottom: 20px;
   text-align: center;
   color: #333;
 }
