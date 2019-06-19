@@ -2,6 +2,7 @@
   <a
     :class="type"
     :href="url"
+    target="_blank"
   >
     {{ label }}
   </a>
