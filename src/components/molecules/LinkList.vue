@@ -4,14 +4,12 @@
       <li v-for="link in links" :key="link.label" :class="li_style">
         <AppLink
           :label="link.label"
-          :path="link.path"
-          :decorate='decorate'
+          :url="link.url"
         />
       </li>
     </ul>
   </div>
 </template>
-
 
 <script>
 import AppLink from '../atoms/AppLink'
@@ -22,7 +20,6 @@ export default {
     },
     props: {
       links: Array,
-      decorate: String,
       ul_style: String,
       li_style: String
     }

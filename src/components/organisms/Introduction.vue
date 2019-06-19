@@ -29,15 +29,15 @@ export default {
       position: 'right',
       links: [
         {
-          path: '#',
+          url: '#',
           label: 'Qiita'
         },
         {
-          path: '#',
+          url: '#',
           label: 'Blog'
         },
         {
-          path: '#',
+          url: '#',
           label: 'Github'
         }
       ]

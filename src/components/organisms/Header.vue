@@ -19,19 +19,19 @@ export default {
       li_style: 'horizon',
       links: [
         {
-          path: '#profile',
+          url: '#profile',
           label: 'PROFILE'
         },
         {
-          path: '#works',
+          url: '#works',
           label: 'WORKS'
         },
         {
-          path: '#skill',
+          url: '#skill',
           label: 'SKILL'
         },
         {
-          path: '#contact',
+          url: '#contact',
           label: 'CONTACT'
         }
       ],
