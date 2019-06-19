@@ -1,21 +1,26 @@
 <template>
   <div class="card" :class="type">
-    <img class="card-img" src="" alt="">
     <CardContent
 			:title="title"
 			:sub_title="sub_title"
 			:description="description"
     />
+    <AppPicture :src="src" :type="type" />
+    <AppLink :type="type" :label="title" path="#" />
   </div>
 </template>
 
 <script>
 import CardContent from '../molecules/CardContent'
+import AppPicture from '../atoms/AppPicture'
+import AppLink from '../atoms/AppLink'
 
 export default {
 	name: 'Card',
 	components: {
-		CardContent
+    CardContent,
+    AppPicture,
+    AppLink
 	},
 	props: {
 		title: String,
@@ -33,11 +38,7 @@ export default {
   border-radius: 5px;
 }
 
-.work {
-  height: 300px;
-}
-
 .skill {
-  height: 100px;
+  /* height: 100px; */
 }
 </style>

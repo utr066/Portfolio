@@ -1,6 +1,6 @@
 <template>
   <a
-    :class="decorate"
+    :class="type"
     :href="path"
   >
     {{ label }}
@@ -13,9 +13,7 @@ export default {
   props: {
     label: String,
     path: String,
-    decorate: {
-      type: String
-    }
+    type: String
   }
 }
 </script>
@@ -30,6 +28,15 @@ export default {
 .under:hover {
   background-color: #C4FFE7;
   color: #fff;
+}
+
+.work {
+  /* height: 40px; */
+  /* margin: 20px; */
+  font-size: 14px;
+  padding: 10px;
+  display: block;
+  background-color: #fff;
 }
 </style>
 

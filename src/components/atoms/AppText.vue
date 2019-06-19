@@ -24,6 +24,10 @@ export default {
   font-size: 14px;
   color: #aaaaaa;
   letter-spacing: 1px;
+  display: -webkit-box;          /* line-clamp を有効にするために指定する */
+  -webkit-box-orient: vertical;  /* line-clamp を有効にするために指定する */
+  -webkit-line-clamp: 3;
+  overflow: hidden;
 }
 
 .intro {

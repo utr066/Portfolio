@@ -18,7 +18,7 @@ export default {
 
 <style scoped>
 #works {
-  padding-bottom: 30px;
+  padding-bottom: 100px;
   text-align: center;
   margin: auto;
   background-color: #FAFAFA;
