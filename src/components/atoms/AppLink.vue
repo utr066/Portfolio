@@ -31,8 +31,6 @@ export default {
 }
 
 .work {
-  /* height: 40px; */
-  /* margin: 20px; */
   font-size: 14px;
   padding: 10px;
   display: block;

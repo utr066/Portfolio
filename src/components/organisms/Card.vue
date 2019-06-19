@@ -6,7 +6,7 @@
 			:description="description"
     />
     <AppPicture :src="src" :type="type" />
-    <AppLink :type="type" :label="title" path="#" />
+    <AppLink v-if="type === 'work'" :type="type" :label="title" path="#" />
   </div>
 </template>
 
