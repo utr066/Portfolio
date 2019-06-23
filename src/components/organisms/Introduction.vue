@@ -71,7 +71,7 @@ export default {
 
 .grid{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(267px, 1fr));
   grid-gap: 10px;
   margin: auto;
 }
