@@ -35,6 +35,7 @@ export default {
 .grid{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(267px, 1fr));
+  justify-content: center;
   grid-gap: 10px;
   margin: auto;
 }
