@@ -6,6 +6,7 @@ axios.interceptors.response.use(function (response) {
 },function (error) {
   Vue.toasted.clear()
   Vue.toasted.error(error.message)
+
   return Promise.reject(error)
 });
 
