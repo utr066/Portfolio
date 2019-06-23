@@ -25,7 +25,7 @@ export default {
 }
 
 .work-list{
-  width: 73%;
+  width: 60%;
 }
 
 .works_title {
