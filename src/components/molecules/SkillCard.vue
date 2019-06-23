@@ -35,8 +35,9 @@ export default {
 .skill_title {
   font-family: 'Al Nile';
   font-weight: normal;
-  font-size: 30px;
+  font-size: 20px;
 }
+
 .skill_image {
   width: 150px;
 }
