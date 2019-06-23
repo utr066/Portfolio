@@ -15,7 +15,8 @@ export default {
 
 <style scoped>
 .avatar {
-  width: 300px;
+  max-width: 257px;
+  margin: auto;
 }
 
 .skill_image {

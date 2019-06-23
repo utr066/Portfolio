@@ -60,13 +60,13 @@ export default {
 <style scoped>
 .introduction {
   padding: 5% 0;
-  width: 60%;
   display: flex;
   margin: auto;
 }
 
 .right_content {
-  margin-left: 10%;
+  max-width: 257px;
+  margin: auto;
 }
 
 .grid{
