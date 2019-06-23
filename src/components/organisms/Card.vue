@@ -5,22 +5,16 @@
 			:sub_title="sub_title"
 			:description="description"
     />
-    <AppPicture :src="src" :type="type" />
-    <AppLink v-if="type === 'work' && url" :type="type" :label="title" :url="url" />
   </div>
 </template>
 
 <script>
 import CardContent from '../molecules/CardContent'
-import AppPicture from '../atoms/AppPicture'
-import AppLink from '../atoms/AppLink'
 
 export default {
 	name: 'Card',
 	components: {
-    CardContent,
-    AppPicture,
-    AppLink
+    CardContent
 	},
 	props: {
 		title: String,
@@ -37,9 +31,5 @@ export default {
 .card {
   background: #fff;
   border-radius: 5px;
-}
-
-.skill {
-  /* height: 100px; */
 }
 </style>
