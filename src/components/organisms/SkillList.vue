@@ -1,32 +1,22 @@
 <template>
   <div class="grid">
     <div v-for="skill in skills" :key="skill.title">
-      <Card
+      <SkillCard 
         :title="skill.name"
         :level="skill.level"
-        type="skill"
+        :image_path="skill.image_path"
       />
-      <AppPicture 
-        :src="skill.image_path"
-        :alt="skill.name"
-        type="skill_image"
-      />
-      <Rate :level="skill.level" />
     </div>
   </div>
 </template>
 
 <script>
-import Card from '../organisms/Card'
-import Rate from '../atoms/Rate'
-import AppPicture from '../atoms/AppPicture.vue'
+import SkillCard from '../molecules/SkillCard'
 
 export default {
   name: 'SkillList',
   components: {
-    Card,
-    Rate,
-    AppPicture
+    SkillCard
   },
   computed: {
     skills() {

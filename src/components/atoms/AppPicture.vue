@@ -19,11 +19,11 @@ export default {
   margin: auto;
 }
 
-.skill_image {
+/* .skill_image {
   width: 150px;
-}
+} */
 
-.work {
+.work_image {
   width: 100%;
   height: 200px;
 }

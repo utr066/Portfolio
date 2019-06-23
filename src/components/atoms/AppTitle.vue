@@ -16,13 +16,5 @@ export default {
 .title {
   font-family: 'Al Nile';
   font-weight: normal;
-  font-size: 30px;
-}
-
-.card {
-  padding-top: 30px;
-  font-size: 20px;
-  text-align: center;
-  color: #333;
 }
 </style>

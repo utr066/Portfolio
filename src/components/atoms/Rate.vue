@@ -32,7 +32,8 @@ $rate5 :$starFull * 5;//星5
 
 .rate{
   position: relative;
-  display: inline-block;
+  display: block;
+  margin: auto;
   width: $starFull * 5;
   height: $starFull;
   font-size: $starFull;

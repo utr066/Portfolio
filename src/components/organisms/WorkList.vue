@@ -1,29 +1,24 @@
 <template>
   <div class="grid">
     <div v-for="work in works" :key="work.title">
-      <Card
+      <WorkCard 
         :title="work.title"
         :sub_title="work.sub_title"
         :description="work.description"
-
+        :src="work.image_path"
+        :url="work.url"
       />
-    <AppPicture :src="work.image_path" type="work_image" />
-    <AppLink v-if="url" :type="work_link" :label="work.title" :url="work.url" />
     </div>
   </div>
 </template>
 
 <script>
-import Card from '../organisms/Card'
-import AppPicture from '../atoms/AppPicture'
-import AppLink from '../atoms/AppLink'
+import WorkCard from '../molecules/WorkCard'
 
 export default {
   name: 'WorkList',
   components: {
-    Card,
-    AppPicture,
-    AppLink
+    WorkCard
   },
   computed: {
     works() {
