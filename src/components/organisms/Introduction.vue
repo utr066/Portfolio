@@ -65,15 +65,13 @@ export default {
 }
 
 .right_content {
-  max-width: 257px;
-  margin: auto;
+  padding: 0 13%;
 }
 
 .grid{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(267px, 1fr));
-  grid-gap: 10px;
-  margin: auto;
+  grid-template-columns: repeat(auto-fit, minmax(267px, 350px));
+  justify-content: center;
 }
 </style>
 
