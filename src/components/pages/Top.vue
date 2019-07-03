@@ -1,5 +1,5 @@
 <template>
-  <div class="wrapper">
+  <div>
     <Header />
     <Cover />
     <Profile />
@@ -32,10 +32,3 @@ export default {
   }
 }
 </script>
-
-<style scoped>
-.wrapper {
-
-}
-</style>
-

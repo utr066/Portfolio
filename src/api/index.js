@@ -5,7 +5,7 @@ axios.interceptors.response.use(function (response) {
   return response
 },function (error) {
   Vue.toasted.clear()
-  Vue.toasted.error(error.message)
+  Vue.toasted.error(error.response.data)
 
   return Promise.reject(error)
 });
@@ -19,5 +19,12 @@ export default {
   },
   fetchSkills() {
       return axios.get(process.env.VUE_APP_API_URL_BASE + 'users/1/skills')
+  },
+  submitInquiry() {
+    return axios.post(process.env.VUE_APP_API_URL_BASE + 'users/1/contact', {
+      name: 'テスター',
+      mail_address: 'hoge@example.com',
+      content: 'あおおおおおおおおおおおおおおお' 
+    })
   }
 }
