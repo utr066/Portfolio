@@ -23,7 +23,7 @@ export default {
   submitInquiry() {
     return axios.post(process.env.VUE_APP_API_URL_BASE + 'users/1/contact', {
       name: 'テスター',
-      mail_address: 'hoge@example.com',
+      mail_address: '',
       content: 'あおおおおおおおおおおおおおおお' 
     })
   }
