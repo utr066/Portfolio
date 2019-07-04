@@ -15,10 +15,5 @@ export default {
     api.fetchSkills().then(response => {
         commit('setSkills', response.data.skills)
     })
-  },
-  submitInquiry() {
-    api.submitInquiry().then(response => {
-      console.log(response)
-    })
   }
 }

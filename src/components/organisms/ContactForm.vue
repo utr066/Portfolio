@@ -1,19 +1,23 @@
 <template>
 	<div>
-    <form @submit="formSubmit">
-      <AppInput name="name" v-model="name" placeholder="お名前" type="inquiry"  />
-      <AppInput name="mail_address" v-model="mail_address" placeholder="メールアドレス" type="inquiry" />
-      <AppTextArea name="content" v-model="content" placeholder="お問い合わせ内容" type="inquiry" />
-      <AppButton text="送信" type="submit" class="submit-btn" />
+    <form @submit.prevent="submitInquiry">
+      <input name="name" v-model="name" placeholder="お名前" class="inquiry">
+      <input type="email" name="mail_address" v-model="mail_address" placeholder="メールアドレス" class="inquiry">
+      <textarea
+          name="content"
+          cols="30"
+          rows="10"
+          v-model="content"
+          placeholder="お問い合わせ内容"
+          class="inquiry inquiry-content"
+      ></textarea>
+      <button type="submit" class="submit-btn">送信</button>
     </form>
-    {{ name }}
 	</div>
 </template>
 
 <script>
-import AppInput from '../atoms/AppInput'
-import AppTextArea from '../atoms/AppTextArea'
-import AppButton from '../atoms/AppButton'
+import api from '../../api'
 
 export default {
   name: 'ContactForm',
@@ -24,15 +28,15 @@ export default {
       content: ""
     }
   },
-	components: {
-		AppInput,
-      AppTextArea,
-      AppButton
-  },
   methods: {
-    formSubmit: function (e) {
-      e.preventDefault();
-      this.$store.dispatch('submitInquiry')
+    submitInquiry: function () {
+      api.submitInquiry({
+        name: this.name,
+        mail_address: this.mail_address,
+        content: this.content
+      }).then(() => {
+        this.$toasted.success('メール送信が成功したよ！').goAway(1500)
+      })
     }
   }
 }
@@ -45,6 +49,22 @@ export default {
   margin-top: 20px;
   background-color: #ddd;
   color: #fff;
+}
+
+
+.inquiry {
+  display: block;
+  font: 15px/24px sans-serif;
+  box-sizing: border-box;
+  width: 50%;
+  padding: 0.3em;
+  letter-spacing: 1px;
+  margin: auto;
+  margin-top: 2%;
+}
+
+.inquiry-content {
+  border: 1px solid #ddd;
 }
 </style>
 
