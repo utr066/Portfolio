@@ -35,7 +35,7 @@ export default {
         mail_address: this.mail_address,
         content: this.content
       }).then(() => {
-        this.$toasted.success('メール送信が成功したよ！').goAway(1500)
+        this.$toasted.success('メール送信が成功したよ！').goAway(2000)
       })
     }
   }
