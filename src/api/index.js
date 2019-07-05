@@ -5,7 +5,7 @@ axios.interceptors.response.use(function (response) {
   return response
 },function (error) {
   Vue.toasted.clear()
-  Vue.toasted.error(error.response.data).goAway(2000)
+  Vue.toasted.error(error.message).goAway(2000)
 
   return Promise.reject(error)
 });

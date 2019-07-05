@@ -1,8 +1,8 @@
 <template>
 	<div>
     <form @submit.prevent="submitInquiry">
-      <input name="name" v-model="name" placeholder="お名前" class="inquiry">
-      <input type="email" name="mail_address" v-model="mail_address" placeholder="メールアドレス" class="inquiry">
+      <input name="name" v-model="name" placeholder="お名前" class="inquiry" required>
+      <input type="email" name="mail_address" v-model="mail_address" placeholder="メールアドレス" class="inquiry" required>
       <textarea
           name="content"
           cols="30"
@@ -10,6 +10,7 @@
           v-model="content"
           placeholder="お問い合わせ内容"
           class="inquiry inquiry-content"
+          required
       ></textarea>
       <button type="submit" class="submit-btn">送信</button>
     </form>
