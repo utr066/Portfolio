@@ -27,20 +27,6 @@ export default {
   data() {
     return {
       position: 'right',
-      links: [
-        {
-          url: '#',
-          label: 'Qiita'
-        },
-        {
-          url: '#',
-          label: 'Blog'
-        },
-        {
-          url: '#',
-          label: 'Github'
-        }
-      ]
     }
   },
   computed: {
@@ -49,10 +35,13 @@ export default {
     },
     avatar() {
       return this.$store.state.profile.avatar
-    }
+    },
+    links() {
+      return this.$store.state.profile.links
+    },
   },
   mounted() {
-      this.$store.dispatch('setProfile')
+    this.$store.dispatch('setProfile')
   }
 }
 </script>
