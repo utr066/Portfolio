@@ -20,19 +20,19 @@ export default {
       links: [
         {
           url: '#profile',
-          label: 'PROFILE'
+          title: 'PROFILE'
         },
         {
           url: '#works',
-          label: 'WORKS'
+          title: 'WORKS'
         },
         {
           url: '#skill',
-          label: 'SKILL'
+          title: 'SKILL'
         },
         {
           url: '#contact',
-          label: 'CONTACT'
+          title: 'CONTACT'
         }
       ],
     }
