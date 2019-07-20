@@ -1,8 +1,8 @@
 import { mount } from '@vue/test-utils'
-import AppButton from '../../components/atoms/AppButton.vue'
+import AppButton from '../../../components/atoms/AppButton.vue'
 
 describe('AppButton', () => {
-  test('renders a button', () => {
+  test('renders a buttongit ', () => {
     const wrapper = mount(AppButton, {
       propsData: {
         text: 'ボタン'

@@ -3,7 +3,7 @@
     <ul :class="ul_style">
       <li v-for="link in links" :key="link.label" :class="li_style">
         <AppLink
-          :label="link.title"
+          :label="link.label"
           :url="link.url"
         />
       </li>
