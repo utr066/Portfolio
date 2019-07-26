@@ -1,5 +1,5 @@
 <template>
-  <footer class="footer">©yutaro-ohno.me</footer>
+  <footer class="footer">©yutaro-ohno</footer>
 </template>
 
 <script>
