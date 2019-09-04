@@ -2,15 +2,18 @@ import api from "../api";
 
 export default {
   setProfile({ commit }) {
-    const res = api.fetchProfile();
-    commit("setProfile", res.data.profile);
+    api.fetchProfile().then(response => {
+      commit("setProfile", response.data.profile);
+    });
   },
   setWorks({ commit }) {
-    const res = api.fetchworks();
-    commit("setWorks", res.data.works);
+    api.fetchworks().then(response => {
+      commit("setWorks", response.data.works);
+    });
   },
   setSkills({ commit }) {
-    const res = api.fetchSkills();
-    commit("setSkills", res.data.skills);
+    api.fetchSkills().then(response => {
+      commit("setSkills", response.data.skills);
+    });
   }
 };
