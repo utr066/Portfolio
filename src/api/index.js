@@ -1,30 +1,38 @@
-import axios from 'axios'
-import Vue from 'vue'
+import axios from "axios";
+import Vue from "vue";
 
-axios.interceptors.response.use(function (response) {
-  return response
-},function (error) {
-  Vue.toasted.clear()
-  Vue.toasted.error(error.message).goAway(2000)
+axios.interceptors.response.use(
+  function(response) {
+    return response;
+  },
+  function(error) {
+    Vue.toasted.clear();
+    Vue.toasted.error(error.message).goAway(2000);
 
-  return Promise.reject(error)
-});
+    return Promise.reject(error);
+  }
+);
 
 export default {
-  fetchProfile() {
-      return axios.get(process.env.VUE_APP_API_URL_BASE + 'users/1/profile')
+  async fetchProfile() {
+    return await axios.get(
+      process.env.VUE_APP_API_URL_BASE + "users/1/profile"
+    );
   },
-  fetchworks() {
-      return axios.get(process.env.VUE_APP_API_URL_BASE + 'users/1/works')
+  async fetchworks() {
+    return await axios.get(process.env.VUE_APP_API_URL_BASE + "users/1/works");
   },
-  fetchSkills() {
-      return axios.get(process.env.VUE_APP_API_URL_BASE + 'users/1/skills')
+  async fetchSkills() {
+    return await axios.get(process.env.VUE_APP_API_URL_BASE + "users/1/skills");
   },
-  submitInquiry(data) {
-    return axios.post(process.env.VUE_APP_API_URL_BASE + 'users/1/contact', {
-      name: data.name,
-      mail_address: data.mail_address,
-      content: data.content 
-    })
+  async submitInquiry(data) {
+    return await axios.post(
+      process.env.VUE_APP_API_URL_BASE + "users/1/contact",
+      {
+        name: data.name,
+        mail_address: data.mail_address,
+        content: data.content
+      }
+    );
   }
-}
+};

@@ -1,19 +1,16 @@
-import api from '../api'
+import api from "../api";
 
 export default {
-  setProfile({commit}) {
-    api.fetchProfile().then(response => {
-      commit('setProfile', response.data.profile)
-    })
+  setProfile({ commit }) {
+    const res = api.fetchProfile();
+    commit("setProfile", res.data.profile);
   },
   setWorks({ commit }) {
-    api.fetchworks().then(response => {
-      commit('setWorks', response.data.works)
-    })
+    const res = api.fetchworks();
+    commit("setWorks", res.data.works);
   },
   setSkills({ commit }) {
-    api.fetchSkills().then(response => {
-        commit('setSkills', response.data.skills)
-    })
+    const res = api.fetchSkills();
+    commit("setSkills", res.data.skills);
   }
-}
+};
